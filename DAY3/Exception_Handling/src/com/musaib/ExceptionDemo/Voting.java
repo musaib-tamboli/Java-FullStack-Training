@@ -1,0 +1,18 @@
+package com.musaib.ExceptionDemo;
+
+public class Voting {
+
+    static void checkAge(int age) {
+
+        if(age < 18) {
+            throw new ArithmeticException(
+                "Not eligible for voting");
+        }
+
+        System.out.println("Eligible for voting");
+    }
+
+    public static void main(String[] args) {
+        checkAge(19);//calling method from here
+    }
+}
