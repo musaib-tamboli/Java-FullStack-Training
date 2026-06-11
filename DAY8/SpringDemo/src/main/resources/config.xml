@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cust1" class="org.springCore.Customer">
+        <property name="customerId" value="101"/>
+        <property name="customerName" value="Musaib"/>
+    </bean>
+
+    <bean id="cust2" class="org.springCore.Customer">
+        <property name="customerId" value="102"/>
+        <property name="customerName" value="Saqib"/>
+    </bean>
+
+</beans>
