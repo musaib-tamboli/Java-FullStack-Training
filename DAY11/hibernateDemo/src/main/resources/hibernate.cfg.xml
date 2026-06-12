@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="hibernate.connection.driver_class">
+            com.mysql.cj.jdbc.Driver
+        </property>
+
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/trialhiber
+        </property>
+
+        <property name="hibernate.connection.username">root</property>
+
+        <property name="hibernate.connection.password">
+            Root@1234
+        </property>
+
+        <!-- Use MySQL 8 Dialect -->
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQL8Dialect
+        </property>
+
+        <!-- Automatically create tables -->
+        <property name="hibernate.hbm2ddl.auto">
+            create
+        </property>
+
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <mapping class="com.example.Student"/>
+        <mapping class="com.map.Answer"/>
+        <mapping class="com.map.Question"/>
+        <mapping class="com.test.Author"/>
+        <mapping class="com.test.Book"/>
+        <mapping class="com.test.Employee"/>
+        <mapping class="com.test.Project"/>
+
+    </session-factory>
+</hibernate-configuration>
